@@ -1,0 +1,354 @@
+body {
+  color: $body-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2f2f2f;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* no-gutters Class Rules */
+.row.no-gutters {
+   margin-right: 0;
+   margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+   padding-right: 0;
+   padding-left: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+
+  .navbar-brand  {
+    padding-top: 0;
+    padding-right: 30px;
+
+    .logo {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding-right: 8px;
+    }
+  }
+
+  .fa {
+    font-size: 18px;
+  }
+}
+
+.showcase {
+  background: url(../img/fashion.jpg) no-repeat right top;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+  padding: 50px 0;
+  overflow: hidden;
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 600px;
+  }
+
+  h1 {
+    margin-top: 200px;
+    font-size: 5rem;
+    color: #fff;
+  }
+
+  p {
+    color: #fff;
+    margin: 0 0 40px;
+    max-width: 700px;
+    font-size: 1.7rem;
+  }
+
+}
+
+.section-acc {
+  background-color: #fff;
+  padding: 100px 40px 40px;
+  text-align: center;
+
+  .list {
+    margin-bottom: 50px;
+  }
+
+  .purse {
+    margin-bottom: 40px;
+  }
+
+  .cap {
+    margin-bottom: 36px;
+    margin-top: 24px;
+  }
+
+}
+
+.section-gallery {
+
+  .container-fluid {
+    padding: 0;
+  }
+  img {
+    max-width: 100%;
+  }
+  .row.no-gutters {
+     margin-right: 0;
+     margin-left: 0;
+  }
+
+  .row.no-gutters > [class^="col-"],
+  .row.no-gutters > [class*=" col-"] {
+     padding-right: 0;
+     padding-left: 0;
+  }
+
+  .gallery-text {
+      background-color: #fff;
+  }
+
+  p {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .glasses {
+    background: url(../img/glasses.jpg) no-repeat center top;
+    background-size: cover;
+    height: 400px;
+    // width: auto;
+    padding: 50px 0;
+    overflow: hidden;
+  }
+
+  .suit {
+    background: url(../img/suit.jpg) no-repeat center top;
+    background-size: cover;
+    height: 400px;
+    // width: auto;
+    padding: 50px 0;
+    overflow: hidden;
+  }
+
+  .purse {
+    background: url(../img/petra.jpg) no-repeat center top;
+    background-size: cover;
+    height: 400px;
+    // width: auto;
+    padding: 50px 0;
+    overflow: hidden;
+  }
+
+  .design-2, .design-1 {
+    width: 70px;
+    height: 70px;
+    margin-top: 90px;
+  }
+
+  .style {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  .gallery-btn {
+    margin-bottom: 70px;
+  }
+  // ************
+  .portfolio-link {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+
+  .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      transition: all ease 0.5s;
+      opacity: 0;
+      background: rgba(46, 46, 46, 0.7);
+  }
+
+  .caption:hover {
+    opacity: 1;
+  }
+
+  .caption-content {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: -12px;
+
+    h3 {
+      color: #fff;
+      font-weight: 300;
+    }
+  }
+  // ************
+
+}// section-gallery
+
+  .section-info {
+    padding: 100px 10px;
+    text-align: center;
+    background-color: #fff;
+    color: set-text-color($main-color);
+
+    p {
+      font-size: 1.7rem;
+      margin-bottom: 40px;
+    }
+
+    // ************
+    .portfolio-link {
+      position: relative;
+      display: block;
+      cursor: pointer;
+      margin: 0 auto;
+    }
+
+    .caption {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        transition: all ease 0.5s;
+        opacity: 0;
+        background: rgba(46, 46, 46, 0.7);
+    }
+
+    .caption:hover {
+      opacity: 1;
+    }
+
+    .caption-content {
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      height: 20px;
+      text-align: center;
+      color: #fff;
+      margin-top: -12px;
+
+      h3 {
+        color: #fff;
+        font-weight: 300;
+      }
+    }
+    // ************
+  }// section-gallery
+
+  footer {
+    text-align: center;
+    font-weight: 300;
+    padding: 80px 0;
+    background: darken($dark-grey, 5%);
+    color: set-text-color($dark-grey);
+    p:first-child {
+      margin-bottom: 0px;
+    }
+
+    .footer-logo {
+      display: inline-block;
+      font-size: 1.8rem;
+
+      .img-logo {
+        width: 50px;
+        height: 50px;
+        margin: 0 6px;
+      }
+    }
+    .fa-heart {
+      color: #ff6767;
+    }
+
+    .ioanna {
+      color: #6F93AB;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  //Back to Top
+
+  a.back-to-top {
+	display: none;
+	width: 55px;
+	height: 55px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: $main-color url("../img/up-arrow.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+  a:hover.back-to-top {
+	background-color: $main-color-dk;
+}
+
+  /*==================================================
+  =             Media Queries             =
+  ==================================================*/
+
+  /* Small Devices, Tablets */
+   @media only screen and (min-width : 768px) {
+
+     .showcase {
+       height: 600px;
+
+       h1 {
+         margin-top: 200px;
+         font-size: 7rem;
+       }
+
+       p {
+         max-width: 700px;
+         font-size: 2rem;
+       }
+     }
+
+     .gallery-btn {
+       margin-bottom: 0px;
+     }
+
+     footer {
+       padding: 50px 0;
+     }
+   }
+
+   /* Medium Devices, Desktops */
+   @media only screen and (min-width : 992px) {
+
+     .section-acc {
+       .list {
+         margin-bottom: 30px;
+       }
+     }
+
+   }
+
+   /* Large Devices, Wide Screens */
+   @media only screen and (min-width : 1170px) {
+      .section-gallery {
+        .design-1, .design-2 {
+          margin-top: 90px;
+        }
+      }
+   }
